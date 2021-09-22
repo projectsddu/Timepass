@@ -1,0 +1,17 @@
+﻿@model IEnumerable<StaffManagement.Models.Staff>
+<html>
+<head><title></title></head>
+<body>
+    @{
+        Layout = "~/Views/Shared/_layout.cshtml";
+        ViewBag.Title = "home using layout";
+    }
+
+
+
+    @foreach (var staff in Model)
+    {
+        @staff.Id @staff.name
+    }
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿
+<html>
+<head>
+    <title></title>
+   
+</head>
+<body>
+    @{
+        Layout = "~/Views/Shared/_layout.cshtml";
+        ViewBag.Title = "home using layout";
+    }
+
+   <h1>@ViewData["name"]</h1>
+    @section sidear{
+        <h1>Sidebar is defined</h1>
+    }
+
+</body>
+</html>
